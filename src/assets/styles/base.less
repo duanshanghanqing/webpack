@@ -1,0 +1,404 @@
+@defaultColor: #fff;
+@headerBgColor: #20a0ff;
+@footerBgColor: #12D4B5;
+@defaultSize: 20;
+//块级化并居中类
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//文本居中
+.middle-content {
+  text-align: center;
+}
+
+//显示方式类
+.inline-block {
+  display: inline-block;
+  *display: inline; //margin-right : -3px ; 元素之间显示间隙，同时没有删除空格的时候就这样写
+  *zoom: 1;
+}
+
+//清除浮动类
+.clearfix {
+  &:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  *zoom: 1; // fix for IE6/7
+}
+
+.fit-height {
+  overflow: auto;
+  zoom: 1;
+}
+
+//文本溢出省略号
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//渐变动画
+.transition_all {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+//弹性布局兼容样式
+.flex {
+  display: flex;
+  display: box;
+  /* OLD - Android 4.4- */
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+//颜色
+@blue: #008cee !important;
+@blue-light: #3bc2b5 !important;
+@red: #D0021b !important;
+@yellow: #ff943e !important;
+@gray: #ccc !important;
+@black: #000 !important;
+.text-blue {
+  color: @blue;
+}
+
+.text-blue-light {
+  color: @blue-light;
+}
+
+.text-red {
+  color: @red;
+}
+
+.text-yellow {
+  color: @yellow;
+}
+
+.text-gray {
+  color: @gray;
+}
+
+.text-black {
+  color: @black;
+}
+
+.text-green {
+  color: #00CC00;
+}
+
+//位移
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+//定宽，常用于覆盖对话框子类
+.width320 {
+  width: 320px !important;
+}
+
+.width420 {
+  width: 420px !important;
+}
+
+.width520 {
+  width: 520px !important;
+}
+
+.width620 {
+  width: 620px !important;
+}
+
+.width720 {
+  width: 720px !important;
+}
+
+.width820 {
+  width: 820px !important;
+}
+
+.width890 {
+  width: 890px !important;
+}
+
+.width920 {
+  width: 920px !important;
+}
+
+.width1020 {
+  width: 1020px !important;
+}
+
+.widthDefault {
+  width: 680px !important;
+}
+
+.widthFull {
+  width: 100% !important;
+}
+
+.heightFull {
+  height: 100% !important;
+}
+
+//hover效果
+.text-hover:hover {
+  color: #E6001F !important;
+  cursor: pointer;
+}
+
+.text-no {
+  cursor: not-allowed !important;
+}
+
+.text_underline {
+  text-decoration: underline;
+}
+
+.font12 {
+  font-size: 12px !important;
+}
+
+//通用隐藏
+.hidden {
+  display: none;
+}
+
+//通用向上顶10px
+.marginTop10 {
+  margin-top: 10px;
+}
+
+//通用向上顶15px
+.marginTop15 {
+  margin-top: 15px;
+}
+
+//覆盖tabs居右
+.subTabs-pullRight {
+  .el-tabs__header {
+    border-bottom: none;
+    .el-tabs__nav {
+      float: right; // margin-right: 5px;
+    }
+  }
+}
+
+//无tabs时，下标线
+hr.no-el-tabs {
+  margin-top: 41px;
+  margin-bottom: 11px;
+  height: 0;
+  border: none; // border-bottom: 1px solid #d1dbe5;
+  width: 100%;
+}
+
+//定义vue下滑动画样式
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+//邮件输入地址input
+.mail_input {
+  width: 300px;
+  .el-input__inner {
+    border-color: transparent;
+    padding: 0;
+    &:focus,
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}
+
+//客户快速搜索
+.fastSeach {
+  :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    opacity: 1;
+    font-size: 12px;
+    color: rgba(192, 196, 204, 1);
+  }
+  ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    opacity: 1;
+    font-size: 12px;
+    color: rgba(192, 196, 204, 1);
+  }
+  input:-ms-input-placeholder {
+    opacity: 1;
+    font-size: 12px;
+    color: rgba(192, 196, 204, 1);
+  }
+  input::-webkit-input-placeholder {
+    opacity: 1;
+    font-size: 12px;
+    color: rgba(192, 196, 204, 1);
+  }
+  .el-input__icon {
+    color: #D0021B;
+    font-size: 12px;
+  }
+  .el-input__inner {
+    padding-left: 15px;
+    width: 350px;
+    height: 32px;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    border: 1px solid rgba(223, 226, 228, 1);
+    &:focus,
+    &:hover {
+      border-color: #DFE2E4;
+    }
+  }
+}
+
+//邮件输入地址,下拉插件
+.mail_input_dropDown {
+  // border:1px solid red;
+  li {
+    line-height: normal;
+    padding: 7px;
+    .name {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .mail {
+      font-size: 12px;
+      color: #999;
+    }
+    .company {
+      font-size: 12px;
+      color: #666;
+      margin-left: 3px;
+    }
+    .highlighted .mail {
+      color: #f00;
+    }
+  }
+}
+
+//邮件文件夹，背景颜色下拉
+i.bg_color {
+  float: left;
+  width: 50px;
+  height: 16px;
+  margin-right: 9px;
+  border-radius: 3px;
+  margin-top: 2px;
+}
+
+//动态控件校验
+.borderRed {
+  input {
+    border-color: @red  !important;
+  }
+}
+
+// 通用 svg 图标
+.iconSVG {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+// 附近客户 地图 弹窗列表
+.constMap {
+  border: 1px solid #eee;
+  border-left:none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 280px;
+  z-index: 9;
+  overflow-y: auto;
+  >li {
+    padding: 10px 0 10px 12px;
+    border-bottom: 1px solid #eee;
+    line-height: 22px;
+    position: relative;
+    >p {
+      width: 80%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .distance {
+      // background: blue;
+      position: absolute;
+      top: 10px;
+      right: 12px;
+    }
+    >div{
+      font-size: 13px;
+      color: #909399;
+      text-indent: 15px;
+    }
+    &.selected,
+    &:hover {
+      cursor: pointer;
+      background: #eee;
+    }
+  }
+}
+// 坐标点
+.markMap{
+    // border:2px solid red;
+    font-style: normal;
+    position: absolute;
+    left: -3px;
+    top: -6px;
+    padding: 1px 2px;
+    background: #3993F8;
+    color: #fff;
+}
+.my-svg-marker{
+    // border:2px solid blue;
+    color: #fff;
+}

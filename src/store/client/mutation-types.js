@@ -1,0 +1,8 @@
+// 客户信息
+export const SET_CUSTOMERINFO = 'SET_CUSTOMERINFO'
+
+// 客户查重
+export const SET_CLIENTCHECK = 'SET_CLIENTCHECK'
+
+// 路由传参
+export const SET_ROUTPARAMETERS = 'SET_ROUTPARAMETERS'

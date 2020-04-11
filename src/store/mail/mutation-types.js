@@ -1,0 +1,34 @@
+// 设置二级导航列表
+export const SET_TREEMENU = 'SET_TREEMENU'
+
+// 文件夹id
+export const SET_SELECTEDBOXID = 'SET_SELECTEDBOXID'
+
+// 文件夹名称
+export const SET_SELECTEDBOXNAME = 'SET_SELECTEDBOXNAME'
+
+// 是否刷新
+export const SET_REFURBISHBOOL = 'SET_REFURBISHBOOL'
+
+// 选中文件id
+export const SET_CHECKEDBOXID = 'SET_CHECKEDBOXID'
+
+// 文件移动类型
+export const SET_TYPEMOVING = 'SET_TYPEMOVING'
+
+// 数量改变
+export const SET_QUANTITYCHANGE = 'SET_QUANTITYCHANGE'
+
+// 是否刷新列表
+export const SET_REFURBISHLISTBOOL = 'SET_REFURBISHLISTBOOL'
+
+// 是否刷新标签列表
+export const SET_REFURBISHLABELLIST = 'SET_REFURBISHLABELLIST'
+
+// 客户树是否刷新
+export const SET_TREECUSTMERBOOL = 'SET_TREECUSTMERBOOL'
+
+// 下属ctid
+export const SET_SUBORDINATECTID = 'SET_SUBORDINATECTID'
+//
+export const SET_MAILTEMPLATELISTG = 'SET_MAILTEMPLATELISTG'

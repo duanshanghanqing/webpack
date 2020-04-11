@@ -1,0 +1,79 @@
+//reset.less (html标签重定义)
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+body {
+    position: relative;
+    font-size: 14px;
+    font-family: -apple-system, 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-width: 1140px;
+    min-height: 555px;
+    overflow-x: auto;
+    color: #303133;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset,
+img {
+    border: 0;
+}
+
+a {
+    outline: none;
+    &:link {
+        text-decoration: none;
+    }
+    &:visited {
+        text-decoration: none;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+    &:active {
+        text-decoration: none;
+    }
+    &:focus {
+        text-decoration: none;
+    }
+}
+// 非谷歌浏览器字体处理
+textarea,
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', Arial, sans-serif;
+}
+
+// 修改浏览器默认滚动条样式
+.scroll::-webkit-scrollbar-track
+    {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .2);
+    background-color: #fff;
+}
+
+.scroll::-webkit-scrollbar,
+    {
+    width: 5px;
+    height: 10px;
+    background-color: #fff;
+}
+
+.scroll::-webkit-scrollbar-thumb,
+{
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(180, 180, 180, 0.3);
+    background-color: #c9cbcf;
+}
+
